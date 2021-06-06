@@ -6,6 +6,9 @@
 
 ---
 
+## Atom Package Repository
+Can be found [here](https://atom.io/packages/spaceduck-syntax).
+
 ## Install
 
 Follow one of the methods below to install, and once done, proceed to [activating the theme](#activating-theme).
