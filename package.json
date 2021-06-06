@@ -8,7 +8,7 @@
     "space",
     "spaceduck"
   ],
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An intergalactic space theme for theme for Atom",
   "repository": "https://github.com/bigpick/spaceduck-atom-syntax",
   "license": "MIT",
