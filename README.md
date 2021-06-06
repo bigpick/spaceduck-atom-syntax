@@ -44,8 +44,17 @@ Once installed, go to `Atom -> Preferences...`, click in the `Themes` tab, and s
 
 ## More Previews
 
-TODO
+### Python
+![python-demo](./samples_pics/python.png)
 
+### JSON
+![json-demo](./samples_pics/json.png)
+
+### JSON
+![json-demo](./samples_pics/json.png)
+
+### Bash
+![bash-demo](./samples_pics/bash.png)
 
 ## License
 
