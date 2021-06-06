@@ -59,5 +59,3 @@ Once installed, go to `Atom -> Preferences...`, click in the `Themes` tab, and s
 ## License
 
 [MIT License](./LICENSE)
-
-

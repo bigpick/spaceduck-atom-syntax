@@ -8,12 +8,10 @@ Algorithm :
 1. Use extended euclid algorithm to find x,y such that a*x + b*y = 1
 2. Take n = ra*by + rb*ax
 """
-
 # Full credit to https://github.com/TheAlgorithms/Python/blob/master/blockchain/chinese_remainder_theorem.py
 #  - Code sheepishly taken verbatim solely for volume of code and great python code examples.
 
 from typing import Tuple
-
 
 # Extended Euclid
 def extended_euclid(a: int, b: int) -> Tuple[int, int]:
@@ -28,7 +26,6 @@ def extended_euclid(a: int, b: int) -> Tuple[int, int]:
     (x, y) = extended_euclid(b, a % b)
     k = a // b
     return (y, x - k * y)
-
 
 # Uses ExtendedEuclid to find inverses
 def chinese_remainder_theorem(n1: int, r1: int, n2: int, r2: int) -> int:

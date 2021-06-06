@@ -58,25 +58,25 @@ atom-text-editor {
   color: @comment;
 
   .syntax--keyword.syntax--control {
-    color: @pink;
+    color: @orange;
   }
 
   .syntax--support.syntax--type {
-    color: @cyan;
+    color: @pink;
     font-style: italic;
   }
 
   .syntax--variable {
-    color: @orange;
+    color: @purple;
     font-style: italic;
   }
 }
 
 .syntax--keyword {
-  color: @pink;
+  color: @orange;
 
   &.syntax--control {
-    color: @pink;
+    color: @orange;
   }
 
   &.syntax--operator {
@@ -89,7 +89,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @purple;
 
     .syntax--ruby &,
     &.syntax--ruby {
@@ -103,23 +103,18 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @pink;
-
-  // &.syntax--type {
-  //   color: @cyan;
-  //   font-style: italic;
-  // }
+  color: @purple2;
 }
 
 .syntax--constant {
-  color: @purple;
+  color: @yellow;
 
   &.syntax--character.syntax--escape {
-    color: @pink;
+    color: @purple;
   }
 
   &.syntax--numeric {
-    color: @purple;
+    color: @yellow;
   }
 
   &.syntax--other.syntax--color {
@@ -127,7 +122,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--symbol {
-    color: @purple;
+    color: @purple2;
   }
 }
 
@@ -148,11 +143,11 @@ atom-text-editor {
   }
 
   &.syntax--constant {
-    color: @purple;
+    color: @purple2;
   }
 
   &.syntax--instance {
-    color: @purple;
+    color: @purple2;
     font-style: italic;
   }
 }
@@ -172,7 +167,7 @@ atom-text-editor {
 
 // String
 .syntax--string {
-  color: @yellow;
+  color: @cyan;
 
   &.syntax--regexp {
     color: @red;
@@ -183,7 +178,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @cyan;
   }
 }
 
@@ -226,7 +221,7 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @purple2;
       font-style: italic;
     }
   }
@@ -244,7 +239,7 @@ atom-text-editor {
 }
 
 .syntax--support {
-  color: @cyan;
+  color: @yellow;
   font-style: italic;
   width: calc(1px);
 
@@ -253,14 +248,14 @@ atom-text-editor {
   }
 
   &.syntax--constant {
-    color: @purple;
+    color: @yellow;
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @green;
 
     &.syntax--any-method {
-      color: @cyan;
+      color: @purple;
     }
 
     .syntax--ruby & {
@@ -271,13 +266,13 @@ atom-text-editor {
 
   // MarkupBlockquote
   &.syntax--quote&.syntax--gfm {
-    color: @yellow;
+    color: @comment;
     font-style: italic;
   }
 }
 
 .syntax--entity {
-  color: @pink;
+  color: @cyan;
 
   &.syntax--name.syntax--function {
     color: @green;
@@ -294,7 +289,7 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @cyan;
+    color: @purple;
   }
 
   &.syntax--name.syntax--section {
@@ -302,7 +297,7 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--tag {
-    color: @pink;
+    color: @purple;
   }
 
   &.syntax--other.syntax--attribute-name {
@@ -316,11 +311,11 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @cyan;
+    color: @green;
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @cyan;
   }
 
   &.syntax--require {
@@ -328,7 +323,7 @@ atom-text-editor {
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @purple2;
   }
 
   &.syntax--delimiter {
@@ -355,7 +350,7 @@ atom-text-editor {
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @purple2;
   }
 
   &.syntax--deleted {
@@ -394,7 +389,7 @@ atom-text-editor {
     -webkit-font-smoothing: auto;
 
     &.syntax--heading {
-      color: @purple;
+      color: @purple2;
       font-weight: bold;
     }
 
@@ -405,41 +400,41 @@ atom-text-editor {
     }
 
     &.syntax--raw {
-      color: @green;
+      color: @purple;
     }
   }
 
   .syntax--link {
     .syntax--punctuation {
-      color: @orange;
+      color: @foreground;
     }
   }
 
   .syntax--raw.syntax--inline {
-    color: @green;
+    color: @purple;
   }
 
   &.syntax--quote,
   .syntax--comment.syntax--quote {
-    color: @yellow;
+    color: @comment;
     font-style: italic;
   }
 
   // MarkupCodeBlockWithoutSyntax
   .syntax--raw {
     .syntax--support.syntax--gfm {
-      color: @orange;
+      color: @purple;
     }
   }
 
   // MarkupCodeBlockWithSyntax
   .syntax--code {
     .syntax--support.syntax--gfm {
-      color: @green;
+      color: @purple;
     }
 
     .syntax--embedded {
-      color: @green;
+      color: @purple;
     }
   }
 }
