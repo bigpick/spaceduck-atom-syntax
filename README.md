@@ -50,8 +50,8 @@ Once installed, go to `Atom -> Preferences...`, click in the `Themes` tab, and s
 ### JSON
 ![json-demo](./samples_pics/json.png)
 
-### JSON
-![json-demo](./samples_pics/json.png)
+### JS
+![js-demo](./samples_pics/js.png)
 
 ### Bash
 ![bash-demo](./samples_pics/bash.png)
