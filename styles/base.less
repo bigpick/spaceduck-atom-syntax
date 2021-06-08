@@ -1,5 +1,18 @@
 @import "syntax-variables";
 
+// String
+@import "strings";
+
+// Punctuation
+@import "punctuation";
+
+// Markup Syntax
+@import "markup";
+
+// GFM markup
+@import "languages/gfm";
+
+
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
@@ -51,9 +64,13 @@ atom-text-editor {
   }
 }
 
+// Mini editor
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}
+
 
 // Syntax styles
-
 .syntax--comment {
   color: @comment;
 
@@ -139,7 +156,7 @@ atom-text-editor {
   }
 
   &.syntax--list {
-    color: @cyan;
+    color: #686f9a;
   }
 
   &.syntax--constant {
@@ -163,79 +180,6 @@ atom-text-editor {
   .syntax--storage.syntax--modifier {
     color: @red;
   }
-}
-
-// String
-.syntax--string {
-  color: @cyan;
-
-  &.syntax--regexp {
-    color: @red;
-
-    .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
-    }
-  }
-
-  &.syntax--other.syntax--link {
-    color: @cyan;
-  }
-}
-
-.syntax--punctuation {
-  color: @pink;
-
-  &.syntax--bracket {
-    color: @foreground;
-  }
-
-  &.syntax--definition {
-    &.syntax--bracket,
-    &.syntax--curly {
-      color: @foreground;
-    }
-
-    &.syntax--comment {
-      color: @comment;
-    }
-
-    &.syntax--string,
-    &.syntax--variable,
-    &.syntax--parameters,
-    &.syntax--array {
-      color: @syntax-text-color;
-
-      .syntax--ruby & {
-        color: @yellow;
-      }
-    }
-
-    &.syntax--heading,
-    &.syntax--identity {
-      color: @blue;
-    }
-
-    &.syntax--bold {
-      color: @orange;
-      font-weight: bold;
-    }
-
-    &.syntax--italic {
-      color: @purple2;
-      font-style: italic;
-    }
-  }
-
-  &.syntax--separator {
-    &.syntax--inheritance {
-      color: @pink;
-    }
-  }
-
-  &.syntax--section.syntax--embedded {
-    color: @pink;
-  }
-
 }
 
 .syntax--support {
@@ -272,7 +216,7 @@ atom-text-editor {
 }
 
 .syntax--entity {
-  color: @cyan;
+  color: @green;
 
   &.syntax--name.syntax--function {
     color: @green;
@@ -343,104 +287,8 @@ atom-text-editor {
   color: @syntax-text-color;
 }
 
-.syntax--markup {
-  &.syntax--bold {
-    color: @orange;
-    font-weight: bold;
-  }
-
-  &.syntax--changed {
-    color: @purple2;
-  }
-
-  &.syntax--deleted {
-    color: @red;
-  }
-
-  &.syntax--italic {
-    color: @yellow;
-    font-style: italic;
-  }
-
-  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
-  }
-
-  &.syntax--inserted {
-    color: @green;
-  }
-
-  &.syntax--list {
-    color: @red;
-  }
-
-  &.syntax--quote {
-    color: @orange;
-  }
-
-  &.syntax--raw.syntax--inline {
-    color: @green;
-  }
+.syntax--https {
+  color: inherit !important;
 }
 
-// Markdown/RST
-.syntax--source.syntax--gfm {
-  .syntax--markup {
-    -webkit-font-smoothing: auto;
 
-    &.syntax--heading {
-      color: @purple2;
-      font-weight: bold;
-    }
-
-    &.syntax--link {
-      &.syntax--underline {
-        color: @cyan;
-      }
-    }
-
-    &.syntax--raw {
-      color: @purple;
-    }
-  }
-
-  .syntax--link {
-    .syntax--punctuation {
-      color: @foreground;
-    }
-  }
-
-  .syntax--raw.syntax--inline {
-    color: @purple;
-  }
-
-  &.syntax--quote,
-  .syntax--comment.syntax--quote {
-    color: @comment;
-    font-style: italic;
-  }
-
-  // MarkupCodeBlockWithoutSyntax
-  .syntax--raw {
-    .syntax--support.syntax--gfm {
-      color: @purple;
-    }
-  }
-
-  // MarkupCodeBlockWithSyntax
-  .syntax--code {
-    .syntax--support.syntax--gfm {
-      color: @purple;
-    }
-
-    .syntax--embedded {
-      color: @purple;
-    }
-  }
-}
-
-// Mini editor
-
-atom-text-editor[mini] .scroll-view {
-  padding-left: 1px;
-}

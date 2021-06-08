@@ -59,6 +59,23 @@ Once installed, go to `Atom -> Preferences...`, click in the `Themes` tab, and s
 ### Bash
 ![bash-demo](./samples_pics/bash.png)
 
+### Markdown
+> A quote looks like this.
+>
+> "I don't care if it works on your machine! We are not shipping your machine!"
+
+A list:
+
+1. First item
+2. Second Item
+3. Third Item
+
+* Bullet
+* Bullet2
+   * Indented bullet
+
+Here is some **bold** text, and this is _italic_.
+
 ## License
 
 [MIT License](./LICENSE)
