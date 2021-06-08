@@ -1,0 +1,17 @@
+// String
+.syntax--string {
+  color: @cyan;
+
+  &.syntax--regexp {
+    color: @red;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @orange;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @cyan;
+  }
+}
+

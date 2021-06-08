@@ -1,0 +1,54 @@
+.syntax--punctuation {
+  color: @pink !important;
+
+  &.syntax--bracket {
+    color: @foreground;
+  }
+
+  &.syntax--definition {
+    &.syntax--bracket,
+    &.syntax--curly {
+      color: @foreground;
+    }
+
+    &.syntax--comment {
+      color: @comment;
+    }
+
+    &.syntax--string,
+    &.syntax--variable,
+    &.syntax--parameters,
+    &.syntax--array {
+      color: @syntax-text-color;
+
+      .syntax--ruby & {
+        color: @yellow;
+      }
+    }
+
+    &.syntax--heading,
+    &.syntax--identity {
+      color: @blue;
+    }
+
+    &.syntax--bold {
+      color: @yellow;
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      color: @purple2;
+      font-style: italic;
+    }
+  }
+
+  &.syntax--separator {
+    &.syntax--inheritance {
+      color: @pink;
+    }
+  }
+
+  &.syntax--section.syntax--embedded {
+    color: @pink;
+  }
+}

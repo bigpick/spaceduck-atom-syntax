@@ -1,0 +1,61 @@
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+    -webkit-font-smoothing: auto;
+
+    &.syntax--heading {
+      color: @purple2;
+      font-weight: bold;
+    }
+
+    &.syntax--comment {
+      color: @comment;
+    }
+
+    &.syntax--link {
+      &.syntax--comment {
+        color: @red;
+      }
+      &.syntax--underline {
+        color: @cyan;
+      }
+    }
+
+    &.syntax--raw {
+      color: @purple;
+    }
+  }
+
+  .syntax--link {
+    .syntax--punctuation {
+      color: @foreground !important;
+    }
+  }
+
+  .syntax--raw.syntax--inline {
+    color: @purple;
+  }
+
+  &.syntax--quote,
+  .syntax--comment.syntax--quote {
+    color: @comment;
+    font-style: italic;
+  }
+
+  // MarkupCodeBlockWithoutSyntax
+  .syntax--raw {
+    .syntax--support.syntax-gfm {
+      color: @purple;
+    }
+  }
+
+  // MarkupCodeBlockWithSyntax
+  .syntax--code {
+    .syntax--support.syntax--gfm {
+      color: @purple;
+    }
+
+    .syntax--embedded {
+      color: @purple;
+    }
+  }
+}
