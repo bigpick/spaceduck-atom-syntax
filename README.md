@@ -46,19 +46,6 @@ Once installed, go to `Atom -> Preferences...`, click in the `Themes` tab, and s
 ---
 
 ## More Previews
-
-### Python
-![python-demo](./samples_pics/python.png)
-
-### JSON
-![json-demo](./samples_pics/json.png)
-
-### JS
-![js-demo](./samples_pics/js.png)
-
-### Bash
-![bash-demo](./samples_pics/bash.png)
-
 ### Markdown
 ![makrdown-demo](./samples_pics/markdown.png)
 
@@ -77,6 +64,16 @@ A list:
    * Indented bullet
 
 Here is some **bold** text, and this is _italic_.
+
+
+### Python
+![python-demo](./samples_pics/python.png)
+
+### JSON
+![json-demo](./samples_pics/json.png)
+
+### JS
+![js-demo](./samples_pics/js.png)
 
 ## License
 
