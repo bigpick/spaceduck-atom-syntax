@@ -60,6 +60,8 @@ Once installed, go to `Atom -> Preferences...`, click in the `Themes` tab, and s
 ![bash-demo](./samples_pics/bash.png)
 
 ### Markdown
+![makrdown-demo](./samples_pics/markdown.png)
+
 > A quote looks like this.
 >
 > "I don't care if it works on your machine! We are not shipping your machine!"
